@@ -92,6 +92,11 @@ main {
     color: rgb(74, 76, 199);
 }
 
+li {
+    list-style-type: none;
+}
+
+
 .hove{
     font-size: 23px;
     color:#dc965a
