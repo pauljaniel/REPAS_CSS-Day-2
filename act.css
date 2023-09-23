@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242325;
+    margin: 0;
+    padding: 0;
+        
+   
+}
+
+header {
+    background-color: #c8c8c8;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 5rem;
+}
+
+.box {
+    background-color: chocolate;
+    width: 32rem;
+    height: 20rem;    
+}
+
+.rounded-button {
+    background-color: #3241c2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.button{
+    padding: 60px 1px;
+}
+.rounded-button:hover {
+    background-color: #3240c285;
+}
+.rounded-button:active {
+    background-color: #f10000;
+    color: #dc965a;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.border-div {
+    
+    border: 1px #dc965a;
+    border-style: dashed;
+    margin-bottom: 30px;
+    
+}
+
+.title{
+    text-align: center;
+    color:#dc965a;
+}
+
+.div-outer {
+    
+    
+    padding: 10px 20px;
+    
+    text-align: right;
+    background-color: #8466da;
+    width: 380px;
+    height: 180px;
+}
+
+.div-middle {
+    background-color: #3f9b68;
+    
+    padding: 10px 20px;
+    text-align: right;
+    width: 340px;
+    height: 130px;
+}
+
+.div-inner {
+    background-color: #19ffff;
+    
+    padding: 10px 10px;
+    width: 300px;
+    height: 80px;
+}
+.hove:hover{
+    color: rgb(74, 76, 199);
+}
+
+.hove{
+    font-size: 23px;
+    color:#dc965a
+}
+
+.link-list {
+    padding: 30px 40px;
+    color: #3f9b68;
+}
+
+.nav-items {
+    text-decoration: none;
+    margin: 10px;
+    color: #242325;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-items:hover {
+    color: #dc965a;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Box Layout Styles */
+.button {
+    text-align: center;
+}
+
+.box {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.float{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35px;
+    color:aliceblue;
+}
+
+.float-paragraph{
+    clear: left;
+    margin-top: 1%;
+    padding: 2px;
+    margin-bottom: 10px;
+    color:aliceblue;
+
+}
+
+
+
+
+
+

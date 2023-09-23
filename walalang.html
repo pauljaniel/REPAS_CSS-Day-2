@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS D2 Activity</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c8c8c8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #b3b3b3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-items {
+            text-decoration: none;
+            margin: 10px;
+            color: #242325;
+            font-weight: bold;
+        }
+
+        .nav-items:hover {
+            color: #dc965a;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Box Layout Styles */
+        .button {
+            text-align: center;
+        }
+
+        .rounded-button {
+            background-color: #bbb891;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .rounded-button:hover {
+            background-color: #dc965a;
+        }
+
+        .border-div {
+            border: 2px solid #242325;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .div-outer {
+            background-color: #c8c8c8;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .div-middle {
+            background-color: #b3b3b3;
+            padding: 10px;
+        }
+
+        .div-inner {
+            background-color: #bbb891;
+            padding: 10px;
+        }
+
+        /* Link List Styles */
+        ul {
+            list-style-type: none;
+        }
+
+        h2 {
+            color: #dc965a;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #242325;
+        }
+
+        a:hover {
+            color: #dc965a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">CSS BOX MODEL</h1>
+        <nav>
+            <a href="#box-layout" class="nav-items">Box Layout</a>
+            <a href="#link-list" class="nav-items">Link List</a>
+            <a href="#float-layout" class="nav-items">Float Layout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="box-layout">
+            <!-- ROUNDED BUTTON -->
+            <div class="button">
+                <button class="rounded-button" id="myButton">Rounded Button</button>
+            </div> 
+
+            <!-- BORDER BOX -->
+            <div class="border-div" id="borderDiv">
+                div border
+            </div>  
+            
+            <!-- DIV WITHIN A DIV -->
+            <div class="div-outer">
+                This is inside div
+                <div class="div-middle">
+                    Within a div
+                    <div class="div-inner">
+                        Inner div
+                    </div>
+                </div>
+            </div>      
+        </section>
+
+        <section id="link-list">
+            <!-- Link and List -->
+            <ul>
+                <h2>CSS Tricks</h2>
+                <li><a href="javascript:void(0);" onclick="showAlert('hover')">hover</a></li>
+                <li><a href="javascript:void(0);" onclick="showAlert('active')">active</a></li>
+                <li><a href="javascript:void(0);" onclick="showAlert('visited')">visited</a></li>
+                <li><a href="javascript:void(0);" onclick="showAlert('focus')">focus</a></li>
+            </ul>
+        </section>
+
+        <script>
+            // JavaScript function to change the border-div text
+            function changeBorderDivText() {
+                var borderDiv = document.getElementById("borderDiv");
+                borderDiv.innerHTML = "Border box text changed!";
+            }
+
+            // JavaScript function to show an alert with the link text
+            function showAlert(linkText) {
+                alert("You clicked: " + linkText);
+            }
+
+            // Add a click event listener to the Rounded Button
+            var button = document.getElementById("myButton");
+            button.addEventListener("click", changeBorderDivText);
+        </script>
+    </main> 
+</body>
+</html>
